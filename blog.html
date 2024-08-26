@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="warp">
+    <meta name="description" content="Mi Pagina Web">
+    <meta name="keyword" content="programacion, web">
     <title>Blog</title>
 </head>
 <body>
-
+<div>
+    <h1 style="color: brown">Mis Gustos</h1>
+</div>
     <header>
 <h1>Informacion Personal</h1>
 
@@ -21,16 +26,16 @@
 
         <section>
             <article>
-                <fieldset>
-                    <legend>Pasatiempos</legend>
+                <fieldset id="PS1" style="color: blueviolet; border: 3px solid;">
+                     <legend>Pasatiempos</legend>
                 <h1>Que pasatiempos tienes?</h1>
                 <br>
+                <div style="text-align: center;">
                     <img src="https://th.bing.com/th?q=Bailar+Dibujo+Simple&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=it-IT&cc=IT&setlang=es&adlt=moderate&t=1&mw=247" alt="">
                     <br>
                     <label for="Seleccion">Bailar</label>
                     <input type="checkbox" id="Seleccion" name="seleccion">
-                    <br><br>
-
+                    <br><br>     
                     <img width="200" src="https://th.bing.com/th/id/OIP.EzxEsxY3NjnU59l7qaYkxAHaFL?w=258&h=181&c=7&r=0&o=5&pid=1.7" alt="">
                     <br>
                     <label for="Seleccion">Correr</label>
@@ -52,13 +57,15 @@
                     <label for="texto">Otro. Cual?</label>
                     <input type="text" id="texto" name="texto" placeholder="Ingrese Pasatiempo">
                     <br><br>
+                </div>
               
             </fieldset>
             </article>
             <article>
-                <fieldset>
+                <fieldset id="PS2" style="color: rgb(127, 157, 255); border: 3 px solid;">
                     <legend>Comida Favorita</legend>
                     <h1>Que Comida Favorita tienes?</h1>
+                    <div style="text-align: center;">
                 <br>
                     <img src="https://th.bing.com/th/id/OIP.1zcYBWSntPgqk2fRrpP9CgHaHa?w=198&h=198&c=7&r=0&o=5&pid=1.7" alt="">
                     <br>
@@ -87,15 +94,17 @@
                     <label for="texto">Otro. Cual?</label>
                     <input type="text" id="texto" name="texto" placeholder="Ingresa dato">
                     <br><br>
+                </div>
                 </fieldset>
               
 
             </article>    
             <article>
-                <fieldset>
+                <fieldset id="PS3" style="color: rgb(136, 83, 18); border: 3 px solid;">
                     <legend>Destinos que haz visitado</legend>
                     <h1>Que Ciudades de Colombia haz visitado?</h1>
                 <br>
+                <div style="text-align: center;">
                     <img width="200" src="https://th.bing.com/th/id/OIP.c7tPm2SncTZwIod8WgJkawHaE8?w=257&h=180&c=7&r=0&o=5&pid=1.7" alt="">
                     <br>
                     <label for="Seleccion">Bogotá</label>
@@ -123,12 +132,13 @@
                     <label for="texto">Otro. Cual?</label>
                     <input type="text" id="texto" name="texto" placeholder="Ingresa dato">
                     <br><br>
+                </div>
             </fieldset>
 
             </article>
             
             <article>
-                <fieldset>
+                <fieldset id="PS4">
                     <legend>Paises que Quisieras Visitar</legend>
 
                     <label for="Nombre">Pais 1</label>
@@ -152,6 +162,10 @@
         </section>
 
         <footer>
+            <a href="#PS1">Pasatiempos</a>
+            <a href="#PS2">Comidas Favoritas</a>
+            <a href="#PS3">Destinos que haz visitado</a>
+            <a href="#PS4">Paises que Quisieras Visitar</a>
            <a href="mailto:juliana.jep@gmail.com">Contactame</a>
            <br>
            <a href="tel:3107631068">Contacto</a>
