@@ -1,0 +1,30 @@
+p{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: rgb(0, 128, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#intro{
+    color: blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+#logo{
+    width: 200px;
+    border-radius: 10px;
+
+}
+.tipo{
+    color: red;
+    font-weight: bold;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+   
