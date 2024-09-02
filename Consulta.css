@@ -4,3 +4,8 @@ h1{
     text-align: center;
     background-color: rgb(65, 39, 151);
 }
+.sevillana-regular {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
