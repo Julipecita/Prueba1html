@@ -1,0 +1,32 @@
+h1{
+    color: rgb(65, 16, 16);
+    font-family: Verdana;
+    text-align: center;
+}
+p{
+    color: rgb(0, 0, 8);
+    font-family: cursive;
+    font-size: large;
+}
+h2{
+    color: white;
+    background-color: rgb(74, 67, 79);
+    text-align: center;
+}
+#logo{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+
+}
+li{
+    font-family: cursive;
+}
+h3{
+    color: rgb(68, 16, 124);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+}
+    

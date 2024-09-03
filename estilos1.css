@@ -1,0 +1,60 @@
+/*Estilo para el menu de navegacion*/
+.navbar{
+    display: flex; /*se utiliza el flex par adistribur horizontal*/
+    justify-content: space-between; /*espacion entre los elementos a alo largo del del eje principal*/
+    align-items: center; /*alinea los elementos verticalmente*/
+    background-color: rgb(45, 43, 43);/*color de fondo principal*/
+    padding: 10px;/*espacio entre los elementos*/
+}
+
+.logo a{
+    color: rgb(128, 181, 247);/*color del logo*/
+    text-decoration: none; /*Elimina el subrayado de logo*/
+    font-size: 24px; /*tamaño de fuente*/
+}
+
+.nav-links{
+    list-style: none; /*elimina los puntos  de la lista*/
+    display: flex; /*se utiliza para distribuir los elementos*/
+    gap: 15px; /*espacio entre los enlaces*/
+}
+
+.nav-links li a{
+    color: rgb(247, 247, 247); /*Color de Texto*/
+    text-decoration: none; /*Elimina el subrayado de los enlaces*/
+    padding: 8px 15px;
+}
+
+.dropdown{
+    position: relative; /*Posicion del contenedor del dropdown*/
+}
+
+.dropdown-content a{
+    padding: 12px 16px; /*Espacio interno alrededor de los enlaces*/
+    text-decoration: none; /*Eliminar el subrayado*/
+    display: block; /*Enlaces ocupen todo el ancho del contenido*/
+}
+
+.dropdown-content{
+    display: none; /*Oculta el contenida del dropdown por defecto*/
+    position: absolute; /*Posiciona el contenisa del dropdown de forma obasoluta respecto a su contenedor*/
+    background-color: rgb(124, 233, 160); /*Color de fondo del contenido del dropdown en blanco*/
+    min-width: 120px; /*Ancho minimo del contenido del dropdown*/
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /*Sombra alrededor del dropdown para dar un efecto de profundidad*/
+}
+
+
+/*Muestra el contenido del dropdown al pasar el curso sobre el contanedor*/
+.dropdown:hover .dropdown-content{
+    display: block; /*Muestra el contenido cuando el curson entra sobre el elemento*/
+}
+
+/*Estilo para los enlaces de navagación al pasar el cursor sobre ellos*/
+.nav-links li a{
+    background-color: #ee0808; /*Color de fondo del enlace al pasar el cursonr sobre él*/
+    border-radius: 4px; /*Bordes redondeados para el fondo del enlace*/
+}
+
+#texto {
+    font-style: oblique;  
+}
