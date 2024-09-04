@@ -54,14 +54,19 @@ footer a:hover{
 header{
     background-color: #222;
     padding: 1px;
-}
+    }
 
 header h1{
 color: #fff;
+
 }
 
 footer p{
     margin: 0;
+}
+
+h1{
+    text-align: center;
 }
 
 
