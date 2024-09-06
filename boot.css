@@ -1,0 +1,18 @@
+.container-fluid{
+    background-color: #e5ead6;
+}
+
+.container-fluid a{
+    color: rgb(34, 25, 17);
+}
+.dropdown button{
+    color: rgb(223, 238, 186);
+    background-color: rgb(15, 16, 5);
+}
+
+body{
+    background-color: beige; /*Color de Fondo*/
+    margin: 0; /*Elimina el margen que viene predeterminado*/
+    padding: 0; /*Elimina los espacios*/
+}
+
