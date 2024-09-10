@@ -45,6 +45,6 @@ console.log('LA SUMA DE ', numero1 , ' Y ', numero2 , ' ES ' , suma);
 //LITERAL TEMPLATE
 
 console.log(`LA SUMA DE ${numero1} Y ${numero2} ES: ${suma}`);
-console.log(`la resta de ${numero1} Y ${numero2} ES: ${resta}`);
+console.log(`LA RESTA ES ${numero1} Y ${numero2} ES: ${resta}`);
 console.log(`LA MULTIPLICACION DE ${numero1} Y ${numero2} ES: ${multiplicacion}`);
 
