@@ -8,7 +8,8 @@ console.log("Hola Mundo");
 
 //variables
 
-/*let numero1 = 45;
+/*
+let numero1 = 45;
 let numero2 = 39;
 let suma, resta, multiplicacion, mod;
 
@@ -136,7 +137,7 @@ if(calificacion < 3.0){
 }
     */
 
-let anio;
+/*let anio;
 
 anio = parseInt(prompt("Año de Nacimiento entre 1883 y 2025"));
 
@@ -158,4 +159,121 @@ if(anio >= 1883 && anio <= 1900){
     console.log("Eres Generacion Grandiosa")
 }else{
     console.log("Estas fuera del rango, ingresa año entre 1883 y 2025")
+}*/
+
+/*let edad = 20;
+
+
+if(edad >=18){
+    console.log("es mayor de edad");
+} else{
+    console.log("es menor de edad")
+};*/
+
+//Operador ternario
+
+/*
+
+let res = (edad>=18)? "Es mayor de edad" : "Es menor de edad";
+
+console.log(res)
+*/
+
+let edad = 28
+
+/*
+if(edad >=0 && edad <= -5){;
+console.log("Eres un infante");
+}else if(edad >=6 && edad <=11){
+    console.log("Eres un niño");
+}else if(edad >=12 && edad <=17){
+    console.log("Eres un Adolecente");
+}else if(edad >=18 && edad <=29){
+    console.log("Eres un joven");
+}else if(edad >=30 && edad <=59){
+    console.log("Eres un Adulto");
+}else{
+    console.log("Eres un Adulto mayor")
+}
+*/
+/*
+if(edad >=0 && edad <= -5){;
+    console.log("Eres un infante");
+    }else if(edad <=11){
+        console.log("Eres un niño");
+    }else if(edad <=17){
+        console.log("Eres un Adolecente");
+    }else if(edad <=29){
+        console.log("Eres un joven");
+    }else if(edad <=59){
+        console.log("Eres un Adulto");
+    }else{
+        console.log("Eres un Adulto mayor")
+    }
+*/
+
+// estructura del Swich case
+
+/*
+let dia = 3
+
+switch(dia){
+case 1: console.log("Imprimir lunes");
+break;
+case 2: console.log("Imprimir martes");
+break;   
+case 3: console.log("Imprimir miercoles");
+break;
+case 4: console.log("Imprimir jueves");
+break;
+default: console.log("dia no existe");
+}
+*/
+
+// Otro ejemplo del switch
+
+/*
+let operador = "+";
+
+switch(operador){
+
+    case "+":
+
+    break;
+
+    case "-":
+
+    break;
+
+    case "*":
+
+    break;
+
+    case "/":
+
+    break;
+
+    default: console.log("Operador no existe");
+
+}
+*/
+let moneda = parseInt(prompt("Que cantidad de dinero quiere cambiar"));
+let divisa = parseInt(prompt("Que divisa quiere cambiar: 1 Dolar; 2 Euro; 3 Libra Esterlina"));
+let ddolar = 4280;
+let deuro = 4728;
+let dlibraesterlina = 5601;
+
+
+
+switch (divisa){
+    case 1: 
+        console.log(`tu cambio de divisas es: ${moneda / ddolar }`);
+    break;
+    case 2:
+        console.log(`tu cambio de divisas es: ${moneda / deuro }`);
+    break;
+    case 3:
+        console.log(`tu cambio de divisas es: ${moneda / dlibraesterlina }`);
+    break;
+    default: console.log(`Esa Divisa no la tengo`)
 }
