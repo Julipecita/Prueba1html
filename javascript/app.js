@@ -260,7 +260,7 @@ switch(operador){
 
 }
 */
-
+/*
 let moneda = parseInt(prompt("Que cantidad de dinero quiere cambiar"));
 let divisa = parseInt(prompt("Que divisa quiere cambiar: \n1.Dolar; \n2. Euro; \n3. Libra Esterlina"));
 let ddolar = 4280;
@@ -279,4 +279,18 @@ switch (divisa){
     break;
     default: console.log(`Esa Divisa no la tengo`)
 }
-    
+  */
+ //Estructura del FOR
+
+ //for(inicio; limite; incremento / decremento)
+
+ for (let i = 1; i<=10; i++){
+    console.log(i);
+ }
+
+ //decremento
+
+ for (let j = 20; j>=1; j--){
+    console.log(j);
+ }
+ 
