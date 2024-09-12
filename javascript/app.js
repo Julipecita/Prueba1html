@@ -1,6 +1,6 @@
 // Comentario de una linea
 
-/**
+/*
  Comentario multilinea
  */
 
@@ -8,7 +8,7 @@ console.log("Hola Mundo");
 
 //variables
 
-/*
+
 let numero1 = 45;
 let numero2 = 39;
 let suma, resta, multiplicacion, mod;
@@ -43,8 +43,8 @@ console.log(suma);
 
 console.log('EL PRIMER VALOR ES:'+ numero1);
 console.log('EL SEGUNDO VALOR ES:'+ numero2);
-console.log('LA SUMA DE '+ numero1 +' Y ' + numero2 + ' ES ' + suma);
-console.log('LA SUMA DE ', numero1 , ' Y ', numero2 , ' ES ' , suma);
+console.log('LA SUMA DE '+ numero1 +' Y ' + numero2 + ' ES: ' + suma);
+console.log('LA SUMA DE ', numero1 , ' Y ', numero2 , ' ES: ' , suma);
 
 //LITERAL TEMPLATE
 
@@ -71,6 +71,7 @@ console.log(`LA SUMA : ${s}`);
 //Generacion de numeros alaeatorios
 //Numero aleatorio entre 1 - 50
 
+
 let alea = Math.floor(Math.random() * 50 ) + 1 ;
 
 console.log(alea);
@@ -80,7 +81,8 @@ console.log(alea);
 let alea1 = Math.floor(Math.random() * 100 );
 
 console.log(alea1)
-*/
+
+
 
 //estructura del IF
 
@@ -96,7 +98,8 @@ if(edad >=18){
 
 //ejercicio 2
 
-/*let calificacion;
+/*
+let calificacion;
 
 calificacion = parseFloat(prompt("ingrese calificacion"))
 
@@ -129,7 +132,7 @@ let calificacion;
 calificacion = parseFloat(prompt("ingrese calificacion"))
 
 if(calificacion < 3.0){
-    console.log("REPROOBO");
+    console.log("REPROBO");
 }else if(calificacion < 4.0){
     console.log("Estudiante paso el Año")
 }else{
@@ -257,6 +260,7 @@ switch(operador){
 
 }
 */
+/*
 let moneda = parseInt(prompt("Que cantidad de dinero quiere cambiar"));
 let divisa = parseInt(prompt("Que divisa quiere cambiar: 1 Dolar; 2 Euro; 3 Libra Esterlina"));
 let ddolar = 4280;
@@ -277,3 +281,4 @@ switch (divisa){
     break;
     default: console.log(`Esa Divisa no la tengo`)
 }
+    */
