@@ -8,7 +8,7 @@ console.log("Hola Mundo");
 
 //variables
 
-
+/*
 let numero1 = 45;
 let numero2 = 39;
 let suma, resta, multiplicacion, mod;
@@ -83,7 +83,7 @@ let alea1 = Math.floor(Math.random() * 100 );
 console.log(alea1)
 
 
-
+*/
 //estructura del IF
 
 /*
@@ -260,14 +260,12 @@ switch(operador){
 
 }
 */
-/*
+
 let moneda = parseInt(prompt("Que cantidad de dinero quiere cambiar"));
-let divisa = parseInt(prompt("Que divisa quiere cambiar: 1 Dolar; 2 Euro; 3 Libra Esterlina"));
+let divisa = parseInt(prompt("Que divisa quiere cambiar: \n1.Dolar; \n2. Euro; \n3. Libra Esterlina"));
 let ddolar = 4280;
 let deuro = 4728;
 let dlibraesterlina = 5601;
-
-
 
 switch (divisa){
     case 1: 
@@ -281,4 +279,4 @@ switch (divisa){
     break;
     default: console.log(`Esa Divisa no la tengo`)
 }
-    */
+    
