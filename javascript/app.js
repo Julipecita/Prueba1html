@@ -290,7 +290,8 @@ switch (divisa){
 
  //decremento
 
- for (let j = 20; j>=1; j--){
+ for (let j = 20; j>=1; j-2)
+    {
     console.log(j);
  }
- 
+
