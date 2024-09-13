@@ -140,7 +140,8 @@ if(calificacion < 3.0){
 }
     */
 
-/*let anio;
+/*
+let anio;
 
 anio = parseInt(prompt("Año de Nacimiento entre 1883 y 2025"));
 
@@ -181,10 +182,10 @@ let res = (edad>=18)? "Es mayor de edad" : "Es menor de edad";
 
 console.log(res)
 */
-
+/*
 let edad = 28
 
-/*
+
 if(edad >=0 && edad <= -5){;
 console.log("Eres un infante");
 }else if(edad >=6 && edad <=11){
@@ -199,6 +200,7 @@ console.log("Eres un infante");
     console.log("Eres un Adulto mayor")
 }
 */
+
 /*
 if(edad >=0 && edad <= -5){;
     console.log("Eres un infante");
@@ -295,9 +297,110 @@ switch (divisa){
     console.log(j);
  }
 */
-
+/*
  let tabla
- tabla = parseInt(prompt("Ingresa la tabla de multiplicar"));
+ tabla = parseInt(prompt("Ingresa la tabla de multiplicar que quieres obtener"));
  for (let i = 1; i<=10; i++){
     console.log(` ${tabla} * ${i} = ${tabla*i}`);
  }
+*/
+
+// Ejercico repaso Ing Fabian
+
+/*
+let num = 0
+let nun = parseInt(prompt("Entrar numero entero"));
+let res = num % 2;
+let par = res==0;
+console.log("Es par" + par);
+
+const temperatura = 18;
+const lluvia = false;
+*/
+/*
+let menu = parseInt(prompt("Que plato principal quiere elegir? \n1.Carne \n2.Pescado \n3 Ensalada "));
+
+
+switch(menu){
+    case 1:
+        console.log(prompt('Con su carne quiere Vino Tinto?'));
+        break;
+    case 2:
+        console.log(prompt('Con su pescado quiere Vino Blanco?'));
+        break;
+    case 3:
+        console.log(prompt('Con su Ensalda quiere Agua?'));
+        break;
+    default:
+        console.log(prompt('Plato principal no seleccionado'));
+
+}
+*/
+/*
+let nMes, estacion;
+nMes = parseInt(prompt("ingresa # mes del año del 1 a 12 "));
+switch(nMes){
+    case 12: 
+    case 1:
+    case 2:
+        estacion = "invierno";
+        break;
+    case 3:
+    case 4:
+    case 5:
+        estacion = "Primavera";
+        break;
+    case 6:
+    case 7:
+    case 8:
+        estacion = "Verano";
+        break;
+    case 9:
+    case 10:
+    case 11:
+        estacion = "Otoño";
+        break;
+}
+alert("la Estacion del año es " +estacion)
+*/
+// Tarea punto 4 
+/*
+let credito, salas
+credito = parseInt(prompt("Bienbenido a tu sala de juegos favorita¡¡¡ \n Cuantos creditos tienes hoy para jugar?"));
+
+switch (credito){
+    case 1: 
+    salas ="tienes derecho a ingresar a la sala de Consolas";
+    break;
+    case 2: 
+    salas ="tienes derecho a ingresar a las salas de Consolas y Juegos 2D";
+    break;
+    case 3: 
+    salas ="tienes derecho a ingresar a las salas de Consolas, juegos 2D y juegos 3D";
+    break;
+    case 4: 
+    salas ="tienes derecho a ingresar a las salas de Consolas, juegos 2D, juegos 3D y Realidad Virtual";
+    break;
+    case 0: 
+    salas ="Sin credito no puedes jugar";
+    break;
+}
+alert(salas);
+*/
+// Tarea punto 5 
+let compra, descuento;
+
+compra = parseInt(prompt("Para saber el monto a pagar ingrese el valor de su compra"));
+
+if(compra <= 100000){
+    descuento = `${compra} "No hay descuento" `;
+}    else if (compra >= 100001 && compra <= 300000){
+    descuento = ( `${compra-(compra*0.05)} ,su descuento fue 5%`);
+}else if (compra > 300000 && compra <= 40000){
+    descuento = (`${compra-(compra*0.10)} ,su descuento fue 10%`);
+}else if (compra >400000){
+    descuento = (`${compra-(compra*0.15)} ,su descuento fue 15%`);
+}else{
+    console.log("ingresa Valor de la compra");
+}
+alert("El valor final a pagar es "  +descuento+ "\n Gracias por su compra") ;
