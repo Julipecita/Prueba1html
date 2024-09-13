@@ -284,14 +284,20 @@ switch (divisa){
 
  //for(inicio; limite; incremento / decremento)
 
- for (let i = 1; i<=10; i++){
+ /*for (let i = 1; i<=10; i++){
     console.log(i);
  }
-
+ console.log ("-----------------------------------")
  //decremento
 
- for (let j = 20; j>=1; j-2)
+ for (let j = 20; j>=1; j-=1)
     {
     console.log(j);
  }
+*/
 
+ let tabla
+ tabla = parseInt(prompt("Ingresa la tabla de multiplicar"));
+ for (let i = 1; i<=10; i++){
+    console.log(` ${tabla} * ${i} = ${tabla*i}`);
+ }
