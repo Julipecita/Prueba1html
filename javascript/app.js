@@ -297,13 +297,26 @@ switch (divisa){
     console.log(j);
  }
 */
+
+// Variable acomuladora
+/*let n = parseInt(prompt("introduce un nuemro positivo"));
+let sum = 0
+
+for (let i =1; i<= n; i++){
+    sum +=i;
+}
+
+console.log(`la suma de los numeros del 1 al ${n} es: ${sum}`);
+*/
+
 /*
  let tabla
  tabla = parseInt(prompt("Ingresa la tabla de multiplicar que quieres obtener"));
- for (let i = 1; i<=10; i++){
+ for (let i = 0; i<=10; i++){
     console.log(` ${tabla} * ${i} = ${tabla*i}`);
  }
 */
+
 
 // Ejercico repaso Ing Fabian
 
@@ -388,6 +401,7 @@ switch (credito){
 alert(salas);
 */
 // Tarea punto 5 
+/*
 let compra, descuento;
 
 compra = parseInt(prompt("Para saber el monto a pagar ingrese el valor de su compra"));
@@ -395,7 +409,7 @@ compra = parseInt(prompt("Para saber el monto a pagar ingrese el valor de su com
 if(compra <= 100000){
     descuento = `${compra} "No hay descuento" `;
 }    else if (compra >= 100001 && compra <= 300000){
-    descuento = ( `${compra-(compra*0.05)} ,su descuento fue 5%`);
+    descuento = ( `${compra-(compra*0.05)} ,su descuento fue 5%`);pars
 }else if (compra > 300000 && compra <= 40000){
     descuento = (`${compra-(compra*0.10)} ,su descuento fue 10%`);
 }else if (compra >400000){
@@ -404,3 +418,39 @@ if(compra <= 100000){
     console.log("ingresa Valor de la compra");
 }
 alert("El valor final a pagar es "  +descuento+ "\n Gracias por su compra") ;
+*/
+
+/*let tabla
+tabla = 1;
+*/
+
+//revisar agrabacion 
+/*
+for (let i = 1; i<=10; i++){
+    for(let j =1; j<=10; j++){
+   console.log(` ${i} * ${j} = ${(i * j)}`);
+}
+console.log(" ")
+}
+*/
+// ejercicio
+
+
+let sum = 0
+
+for (let i =1; i<200; i+=2){
+       sum +=i;
+    console.log(`la suma de lso primero 100 numeros impares es: ${sum}`);
+}
+
+
+let suma = 0
+let contador = 0
+for (let i = 1; contador <100; i+=2){
+    suma +=i;
+    contador++;
+}
+console.log(`La suma de los primeros 100 numero impares es: ${suma}`);
+
+
+
