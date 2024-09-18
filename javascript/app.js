@@ -568,8 +568,8 @@ switch(opcion){
 
 }
 */
-
-
+// opcion 1 del juego
+/*
 let alea = Math.floor(Math.random() * 50 ) + 1 ;
 console.log(alea);
 let num = 0;
@@ -592,3 +592,39 @@ while(alea !== num){
         alert("Pon un número, quieres?");
     }
 }
+    */
+
+// opcion 2 del juego
+
+let alea = Math.floor(Math.random() * 50 ) + 1 ;
+console.log(alea);
+let num = 0;
+let intentos = 0;
+let opcion = (parseInt(prompt("EL JUEGO ES ADIVINA EL NUMERO, Quieres jugar (ingreso 1 ó 2) \n 1. SI \n 2. No")));
+
+switch(opcion){
+    case 1:
+        while(alea !== num){
+                num = parseInt(prompt("Vamos a jugar¡¡¡¡ \n Ingresa tu opcion de 1 a 50"));
+                intentos ++;
+                if (num <= 0 || num > 50){
+                alert("intenta otra vez...ingresa un número del 1 al 50");
+                } else if (num < alea){
+                alert("Tu elección esta por debajo, intenta otra vez");
+                } else if (num > alea){
+                alert("tu elección esta por encima, intenta otra vez");
+                } else if (num == alea){
+                alert(`Adivinaste el número ${alea} en ${intentos} intentos`);
+                } else {
+                alert("Pon un número, quieres?");
+                }
+            }
+    break;
+            
+    case 2:
+        alert("Hasta la próxima")
+        break;
+
+}
+
+
