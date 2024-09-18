@@ -435,7 +435,7 @@ console.log(" ")
 */
 // ejercicio
 
-
+/*
 let sum = 0
 
 for (let i =1; i<200; i+=2){
@@ -451,6 +451,141 @@ for (let i = 1; contador <100; i+=2){
     contador++;
 }
 console.log(`La suma de los primeros 100 numero impares es: ${suma}`);
+*/
+
+//for
+/*
+for(let i=1; i<= 10; i++){
+console.log(i);
+}
+*/
+
+//while
+
+/*
+console.log("------------------------------");
+
+let numero = 1;
+
+while(numero <=10){
+    console.log(numero)
+    numero++;
+}
+*/
+// SUMER NUMEROS POSITIVOS
+
+//Aporte de Juliana Perez
+/*
+let n = 1 
+let sum=0;
+while (n > 0){
+    n = parseInt(prompt("Ingrese un numero positivo"));
+    sum += n;
+    console.log(sum)
+}
+
+console.log(`La suma de sus numeros es ${sum+(n * -1)}`);
+*/
+/*
+let n = 1 
+let sum=0;
+while (n > 0){
+    n = parseInt(prompt("Ingrese un numero positivo"));
+    sum += n;
+}
+
+console.log(`La suma de sus numeros es ${sum+(n * -1)}`);
+*/
+//ejercicio jorge
+/*
+let num;
+let sum = 0;
+while ((num = parseInt(prompt("Ingrese un numero positivo: "))) > 0) {
+  sum += num;
+  console.log(sum);
+}
+console.log("la suma total es:", sum);
+
+*/
+/*
+//Desarrollar menu de opciones
+
+let opcion;
+let estado = true;
+let coseno, seno, raiz, numero;
+
+// opciones realizar un calculo automatico
+
+// 1.Raiz
+//2. Seno
+//3. Coseno
+
+while (estado){
+
+opcion = (parseInt(prompt(`SELECCIONE OPCION: \n 1. Raiz \n 2. Seno de N1 \n 3. Coseno de N1 ?\n 4. Salir`)));
+
+switch(opcion){
+
+    case 1: alert("Seleciono Raiz");
+
+    numero = (parseFloat(prompt('ingrese el numero para calcular Raiz')));
+
+    raiz = Math.sqrt(numero);
+
+    alert(`LA RAIZ DE ${numero} ES: ${raiz}`);
+
+    break;
+
+    case 2: alert("Selecciono Seno N1");
+
+    numero = (parseFloat(prompt('ingrese el numero para calcular Seno')));
+
+    seno = Math.sin(numero);
+
+    alert(`EL SENO DE ${numero} ES: ${seno}`);
+
+    break;
+
+    case 3: alert("Selecciono Coseno N1");
+
+    numero = (parseFloat(prompt('ingrese el numero para calcular Coseno')));
+
+    coseno = Math.cos(numero);
+
+    alert(`EL Coseno DE ${numero} ES: ${coseno}`);
+
+    break;
+
+    case 4: alert("Saliendo");
+    estado = false;
+    break;
+
+    default:
+        alert("la opcion no existe");
+
+    
+}
+
+}
+*/
+
+let estado = true
+
+let alea = Math.floor(Math.random() * 50 ) + 1 ;
+
+console.log(alea);
+
+let numero = parseInt(prompt("Adivina el numero de 1 a 50, Ingresa tu opcion"));
+
+while(estado)
+    if (numero < alea) {
+        console.log("Tu opcion es menor");
+    } else if (numero > alea){
+        console.log("tu opcion es mayor");
+    } else if (numero === alea){
+        console.log("Adivinaste el numero")
+    }
+
 
 
 
