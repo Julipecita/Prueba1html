@@ -569,23 +569,26 @@ switch(opcion){
 }
 */
 
-let estado = true
 
 let alea = Math.floor(Math.random() * 50 ) + 1 ;
-
 console.log(alea);
+let num = 0;
+let intentos = 0;
 
-let numero = parseInt(prompt("Adivina el numero de 1 a 50, Ingresa tu opcion"));
 
-while(estado)
-    if (numero < alea) {
-        console.log("Tu opcion es menor");
-    } else if (numero > alea){
-        console.log("tu opcion es mayor");
-    } else if (numero === alea){
-        console.log("Adivinaste el numero")
+
+while(alea !== num){
+    num = parseInt(prompt("EL JUEGO ES ADIVINA EL NUMERO...Vamos a jugar¡¡¡¡ \n Ingresa tu opcion de 1 a 50"));
+    intentos ++;
+    if (num <= 0 || num > 50){
+        alert("intenta otra vez...ingresa un número del 1 al 50");
+    } else if (num < alea){
+       alert("Tu elección esta por debajo, intenta otra vez");
+    } else if (num > alea){
+        alert("tu elección esta por encima, intenta otra vez");
+    } else if (num == alea){
+        alert(`Adivinaste el número ${alea} en ${intentos} intentos`);
+    } else {
+        alert("Pon un número, quieres?");
     }
-
-
-
-
+}
