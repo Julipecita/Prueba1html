@@ -595,7 +595,7 @@ while(alea !== num){
     */
 
 // opcion 2 del juego
-
+/*
 let alea = Math.floor(Math.random() * 50 ) + 1 ;
 console.log(alea);
 let num = 0;
@@ -623,8 +623,148 @@ switch(opcion){
             
     case 2:
         alert("Hasta la próxima")
-        break;
+    break;
 
 }
+*/
 
+// ESTRUCTURA DEL DO WHILE
 
+//calculo de area de un circulo, cuadrado, triangulo
+
+// Area de circulo = p1 *r*r
+
+// area del cuadrado = L*L
+
+// area triangulo = (B*H)/2
+
+/*
+let ac, acu, at;
+
+let r, lado, b, h;
+
+const pi = 3.1416;
+
+let opcion;
+
+let estado = true
+do{
+
+    opcion = parseInt(prompt(' 1. Area Circulo \n 2. Area Cuadrado \n 3. Area Trinangulo \n 4. Salir'));
+
+    switch(opcion){
+        case 1: alert("Area del Circulo");
+
+        r = parseFloat(prompt("ingrese el valor del radio"));
+
+        ac = pi * (r*r);
+
+        alert(`El area del circulo es ${ac}`);
+
+            break;
+        
+        case 2: alert("Area del Cuadrado");
+
+        lado = parseFloat(prompt("ingrese el valor del lado"));
+
+        acu = lado * lado
+
+        alert(`El area del cuadrado es ${acu}`);
+            break;
+
+        case 3: alert("Area del tríangulo");
+
+        b = parseFloat(prompt("ingrese el valor de la base"));
+        h = parseFloat(prompt("ingrese el valor de la altura"));
+
+        at = (b*h)/2;
+
+        alert(`El area del triangulo es ${at}`);
+            break;
+
+        case 4:
+            alert("Saliendo....");
+            estado = false
+            break;
+
+        default:
+        alert("opcion no valida");
+        estado = false
+    }
+}while(estado)
+
+*/
+
+//Calculo de Cambio de temperatura
+
+let temp, conv;
+let opcion;
+
+let estado = true
+
+do{
+
+    opcion = parseInt(prompt('Convertir de \n 1. Kelvin a Celsius \n 2. Farenheit a Celsius \n 3. Celsius a Kelvin \n 4. Farenheit a Kelvin \n 5. Kelvin a Farenheit \n 6. Celsius a Farenheit'));
+
+    switch(opcion){
+        case 1: 
+
+        temp = parseFloat(prompt("Elegiste Kelvin a Celsius, ingrese la temperatura a convertir"));
+
+        conv = (temp-273.15);
+
+        alert(`los grados son ${conv} Celsius`);
+
+            break;
+        
+        case 2: 
+
+        temp = parseFloat(prompt("Elegiste Farenheit a Celsius, ingrese la temperatura a convertir"));
+
+        conv = (5*(temp-32)/9);
+
+        alert(`los grados son ${conv} Celsius`)
+            break;
+
+        case 3: 
+
+        temp = parseFloat(prompt("Elegiste Celsius a Kelvin, ingrese la temperatura a convertir"));
+
+        conv = temp+273.15;
+
+        alert(`los grados son ${conv} Kelvin`)
+            break;
+
+        case 4: 
+
+        temp = parseFloat(prompt("Elegiste Farenheit a Kelvin, ingrese la temperatura a convertir"));
+    
+        conv = (5*(temp-32)/9)+273.15;
+    
+        alert(`los grados son ${conv} Kelvin`);
+            break;
+
+        case 5: 
+
+        temp = parseFloat(prompt("Elegiste Kelvin a Farenheit, ingrese la temperatura a convertir"));
+
+        conv = ((9*(temp-273.15)/5)+32);
+
+        alert(`los grados son ${conv} Farenheit`);
+            break;
+
+        case 6: 
+
+        temp = parseFloat(prompt("Elegiste Celsius a Farenheit, ingrese la temperatura a convertir"));
+    
+        conv = (((9*temp)/5)+32);
+    
+        alert(`los grados son ${conv} Farenheit`);
+                break;
+
+        default:
+        alert("sin rango conocido");
+        estado = false
+          
+    }
+}while(estado)
