@@ -408,7 +408,7 @@ compra = parseInt(prompt("Para saber el monto a pagar ingrese el valor de su com
 
 if(compra <= 100000){
     descuento = `${compra} "No hay descuento" `;
-}    else if (compra >= 100001 && compra <= 300000){
+}else if (compra >= 100001 && compra <= 300000){
     descuento = ( `${compra-(compra*0.05)} ,su descuento fue 5%`);pars
 }else if (compra > 300000 && compra <= 40000){
     descuento = (`${compra-(compra*0.10)} ,su descuento fue 10%`);
@@ -696,7 +696,7 @@ do{
 */
 
 //Calculo de Cambio de temperatura
-
+/*
 let temp, conv;
 let opcion;
 
@@ -713,7 +713,7 @@ do{
 
         conv = (temp-273.15);
 
-        alert(`los grados son ${conv} Celsius`);
+        alert(`los grados son ${conv} Celsius`)toFixed(2);
 
             break;
         
@@ -723,7 +723,7 @@ do{
 
         conv = (5*(temp-32)/9);
 
-        alert(`los grados son ${conv} Celsius`);
+        alert(`los grados son ${conv} Celsius`)toFixed(2);
             break;
 
         case 3: 
@@ -732,7 +732,7 @@ do{
 
         conv = temp+273.15;
 
-        alert(`los grados son ${conv} Kelvin`);
+        alert(`los grados son ${conv} Kelvin`)toFixed(2);
             break;
 
         case 4: 
@@ -741,7 +741,7 @@ do{
     
         conv = (5*(temp-32)/9)+273.15;
     
-        alert(`los grados son ${conv} Kelvin`);
+        alert(`los grados son ${conv} Kelvin`)toFixed(2);
             break;
 
         case 5: 
@@ -750,7 +750,7 @@ do{
 
         conv = ((9*(temp-273.15)/5)+32);
 
-        alert(`los grados son ${conv} Farenheit`);
+        alert(`los grados son ${conv} Farenheit`).toFixed(2);
             break;
 
         case 6: 
@@ -766,5 +766,101 @@ do{
         alert("sin rango conocido");
         estado = false
           
+    }
+}while(estado)
+
+*/
+
+
+//1.dibujar un trinagulo
+/*
+let dim;
+let triangulo = '';
+
+
+dim = parseInt(prompt("Introduce un numero de 1 a 20"));
+
+for(let i=1; i<=dim; i++){
+    triangulo += '*' .repeat(i) + '\n';
+}
+console.log(triangulo);
+
+____________________________________________
+
+let dim;
+let a = '';
+i = 1;
+
+
+dim = parseInt(prompt("Introduce un numero de 1 a 20"));
+
+while(i<= dim){
+    a =  "*" .repeat(i);
+    console.log(a)
+    i = i+1;
+}
+*/
+
+// 2.Contraseña de acceso
+/*
+let password_C = "SweetHome";
+let int = 0;
+let int_max = 3;
+
+while (int < int_max){
+    let password_U = prompt("introduce contraseña de usuario");
+    if(password_C === password_U) {;
+        alert("Acceso concedido");
+        break;
+
+    }else {
+        int++;
+        if(int < int_max) {
+            alert("Acceso denegado, introduce contraseña de usuario correcta");
+        }else {
+            alert("Alerta, intruso tratando de acceder...")
+        }
+}
+
+}
+*/
+
+//3. Letras repatidas
+
+let letra;
+let opcion;
+let num;
+estado = true;
+
+do{
+    opcion = parseInt(prompt("Entre X y Z cual eliges? \n 1. X \n 2. Z \n 3. Salir"));
+
+    switch(opcion){
+        case 1: 
+            num = parseInt(prompt("introduce las veces que quieres que se repita X"));
+            for(let i=1; i<=num; i++){
+                letra = 'X' .repeat(i);
+                 }
+                console.log(letra);
+              break;
+                                
+        case 2:
+            num = parseInt(prompt("introduce las veces que quieres que se repita Z"));
+            for(let i=1; i<=num; i++){
+                letra = 'Z' .repeat(i);
+                 }
+                 console.log(letra);
+            break;
+
+        case 3:
+            alert("saliedo....");
+            estado = false;
+            break;
+            
+        default:
+            alert("no elegiste X o Z");
+            estado = false;
+
+
     }
 }while(estado)
