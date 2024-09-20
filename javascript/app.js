@@ -723,7 +723,7 @@ do{
 
         conv = (5*(temp-32)/9);
 
-        alert(`los grados son ${conv} Celsius`)
+        alert(`los grados son ${conv} Celsius`);
             break;
 
         case 3: 
@@ -732,7 +732,7 @@ do{
 
         conv = temp+273.15;
 
-        alert(`los grados son ${conv} Kelvin`)
+        alert(`los grados son ${conv} Kelvin`);
             break;
 
         case 4: 
