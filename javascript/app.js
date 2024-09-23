@@ -826,7 +826,8 @@ while (int < int_max){
 */
 
 //3. Letras repatidas
-
+//_______________________________________________________________________________________
+/*
 let letra;
 let opcion;
 let num;
@@ -864,3 +865,132 @@ do{
 
     }
 }while(estado)
+*/
+
+
+//Ejemplo 1 de funciones
+/*
+saludar("Pedro");
+
+functionsaludar(nombre){
+    alert(`Hola ${nombre}`);
+}
+
+// Ejemplo 2
+
+function raiz(numero){
+    return Math.sqrt(numero);
+}
+
+console.log(raiz(18))
+*/
+//Ejemplo 3
+/*
+function exponente(base, cuadrado){
+   return Math.pow(base, cuadrado);
+
+}
+
+console.log(`EL CUADRADO ES: ${exponente(12, 6)}`);
+*/
+// convertir en funciones
+
+let temp;
+let opcion;
+
+let estado = true
+
+do{
+
+    opcion = parseInt(prompt('Convertir de \n 1. Kelvin a Celsius \n 2. Farenheit a Celsius \n 3. Celsius a Kelvin \n 4. Farenheit a Kelvin \n 5. Kelvin a Farenheit \n 6. Celsius a Farenheit \n 7. Salir'));
+
+    switch(opcion){
+        case 1: 
+
+            temp = parseFloat(prompt("Elegiste Kelvin a Celsius, ingrese la temperatura a convertir"));
+
+            alert(`la conversion es  ${Kelvin_Celsius(temp)} Celsius`);
+            break;
+        
+        case 2: 
+
+            temp = parseFloat(prompt("Elegiste Farenheit a Celsius, ingrese la temperatura a convertir"));
+       
+            alert(`la conversion es ${Farenheit_Celsius(temp)} Celsius`);
+            break;
+
+        case 3: 
+
+            temp = parseFloat(prompt("Elegiste Celsius a Kelvin, ingrese la temperatura a convertir"));
+     
+            alert(`la conversion es ${Celsius_Kelvin(temp)} Kelvin`);
+            break;
+
+        case 4: 
+
+            temp = parseFloat(prompt("Elegiste Farenheit a Kelvin, ingrese la temperatura a convertir"));
+            
+            alert(`la conversion es ${Farenheit_Kelvin (temp)} Kelvin`);
+            break;
+
+        case 5: 
+
+            temp = parseFloat(prompt("Elegiste Kelvin a Farenheit, ingrese la temperatura a convertir"));
+
+            alert(`la conversion es ${Kelvin_Farenheit(temp)} Farenheit`);
+            break;
+
+        case 6: 
+
+            temp = parseFloat(prompt("Elegiste Celsius a Farenheit, ingrese la temperatura a convertir"));
+    
+            alert(`la conversion es ${Celsius_Farenheit(temp)} Farenheit`);
+            break;
+
+        case 7:
+            alert("saliendo");
+            estado = false
+            break;
+            
+
+        default:
+            alert("sin rango conocido");
+            estado = false
+          
+    }
+}while(estado)
+
+    function Kelvin_Celsius (temp){
+
+        return temp-273.25;
+    }
+
+    function Farenheit_Celsius (temp){
+
+        return (5*(temp-32)/9);
+    }
+
+    function Celsius_Kelvin (temp){
+
+        return temp+273.15;
+    }
+
+    function Farenheit_Kelvin (temp){
+
+        return (5*(temp-32)/9)+273.15;
+    }
+
+    function Kelvin_Farenheit(temp){
+
+        return ((9*(temp-273.15)/5)+32);
+    }
+
+    function Celsius_Farenheit(temp){
+
+        return (((9*temp)/5)+32);
+    }
+    
+    
+
+
+     
