@@ -893,8 +893,11 @@ function exponente(base, cuadrado){
 
 console.log(`EL CUADRADO ES: ${exponente(12, 6)}`);
 */
-// convertir en funciones
 
+
+// convertir temperatura  en funciones
+
+/*
 let temp;
 let opcion;
 
@@ -989,8 +992,127 @@ do{
 
         return (((9*temp)/5)+32);
     }
+    */
+   
+    //FUNCION TRAICIONAL
+    //Forma 1
+/*
+    function multiplicacion(a, b){
+        return (a*b);
+
+    }
+
+    console.log(multiplicacion(a,b));
+
+    //funcion flecha
+
+    // FORMA 2
+
+    let multiplicacion1 = (a, b)=>{
+        return a*b;
+
+    }
+    console.log(multiplicacion1(6,3));
+
+    //FORMA 3
+
+    let multiplicacion2 = (a,b) => a*b
+
+    console.log(multiplicacion2(3,7));
+
+    //Otro Ejercicio
+
+    function raiz(numero){
+        return Math.sqrt(numero);
+    }
     
-    
+    console.log(raiz(18))
+//-------------
+    let ra = (numero) => Math.sqrt(numero);
+
+    console.log(ra(25));
+
+    let funcion = () => console.log("hola, soy uan funcion sin parametros"); // sinfion sin parametros
+
+    funcion();
+
+*/
+
+//Arreglos
+
+let estudiantes = ["laura", "Julian", "Andres", "Oscar", "Paola"];
+
+console.log(estudiantes);
+
+//anadir un elementos al final
+
+console.log(estudiantes.push ("Ricardo"));
+console.log(estudiantes);
+
+//Agregar elemetnos al principio
+
+console.log(estudiantes.unshift("Esmeralda"));
+console.log(estudiantes);
+
+//agregar un lelemtno en culaquie rposicion
+
+console.log(estudiantes.splice(2 , 0, "Sofia"));
+console.log(estudiantes);
+
+// Eliminar el ultimo elemento
+
+console.log(estudiantes.pop());
+console.log(estudiantes);
+
+// Elimminar elemento en una posicion
+
+console.log(estudiantes.splice(2, 1));
+
+//Eliminar el primer elemento
+
+console.log(estudiantes.shift());
+console.log(estudiantes);
+
+//saber posicion de un elemento
+
+console.log(estudiantes.indexOf("Andres"));
+console.log(estudiantes);
 
 
+
+
+//recorrer el arreglo
+
+//opcion 1
+
+estudiantes.forEach((est) => {
+
+    console.log(est);
+
+});
+
+
+//buscar 1 elemento
+
+
+estudiantes.forEach((est) => {
+
+    if (est === estudiantes[3]){
+        console.log(est)
+    }
+
+});
+/*
+for(let est of estudiantes){
+    console.log(est)
+}
+    */
+
+let vector = [];
+
+vector[0] = 15;
+vector[1] = 63;
+vector[2] = 48;
+
+console.log(vector);
      
