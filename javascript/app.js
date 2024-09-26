@@ -1038,8 +1038,9 @@ do{
 
 */
 
-//Arreglos
 
+//Arreglos_________________
+/*
 let estudiantes = ["laura", "Julian", "Andres", "Oscar", "Paola"];
 
 console.log(estudiantes);
@@ -1106,8 +1107,10 @@ estudiantes.forEach((est) => {
 for(let est of estudiantes){
     console.log(est)
 }
-    */
+*/
 
+
+/*
 let vector = [];
 
 vector[0] = 15;
@@ -1115,4 +1118,148 @@ vector[1] = 63;
 vector[2] = 48;
 
 console.log(vector);
-     
+ */
+
+/*
+let vector = [];
+
+//recorrer para llenarlo
+
+for(let i=0; i< 5; i++){
+
+    vector.push(i+1);
+}
+
+// recorro para mostrar
+for (let i=0; i<5; i++){
+    console.log(vector[i]);
+}
+
+*/
+
+// sumar los numero del arreglo
+// For tradicional
+/*
+let numero = [12,18,16,19,23];
+let suma = 0;
+
+for(let i = 0; i < numero.length; i++){;
+
+suma += numero[i];
+
+}
+
+console.log(`LA SUMA ES ${suma}`);
+*/
+// ForEach
+
+/*
+numero.forEach((nu)=> {
+
+    suma += nu;
+});
+
+console.log(`LA SUMA ES : ${suma}`);
+*/
+
+/*
+let numero = [12,18,16,19,23];
+let suma1 = 0
+let suma2 = 0
+
+
+for(i=0 ; i < numero.length; i++)
+
+    if(numero[i] % 2 === 0){
+            
+            suma1 += numero[i];
+    }else {
+            suma2 += numero[i];
+}
+
+console.log(`La suma de los pares es: ${suma1}`);
+console.log(`La suma de los impares es: ${suma2}`);
+*/
+
+
+// Hallar mayor y menor
+/*
+let numero = [12,18,16,19,23];
+let mayor = numero[0];
+let menor = numero[0];
+
+for(i=0 ; i < numero.length; i++)
+
+if (numero[i] > mayor){
+
+    mayor = numero[i];
+
+ }else if(numero[i] < menor){
+    menor = numero[i]
+
+ };
+
+console.log(`El mayor es : ${mayor}`);
+console.log(`el menor es : ${menor}`);
+*/
+
+// arreglos
+
+/*
+let num = new Array(5);
+
+for(let i = n0; i> numero.length; i++){
+
+num[i] = parseInt(prompt("ingrese el numero entero"));
+
+}
+
+for (let i = 0; i>num.length; i++){
+
+    console.log(`${num[i]}`)
+}
+*/
+
+// primer arreglo
+
+/*
+let tamanio =parseInt(prompt("ingrese la cantidad de estudiantes"));
+let calificaciones = new Array(tamanio);
+
+for(let i = 0; i< tamanio; i++){
+
+    calificaciones[i] = parseFloat(prompt("ingrese las notas del estudiante"));
+
+}
+
+for(i = 0; i < tamanio; i++){
+console.log(calificaciones[i]);
+}
+*/
+// segundo arreglo
+
+let tamanio =parseInt(prompt("ingrese la cantidad de estudiantes"));
+let calificaciones = new Array(tamanio);
+let sum = 0;
+let mayor = 0;
+
+for(let i = 0; i< calificaciones.length; i++){
+
+    calificaciones[i] = parseFloat(prompt("ingrese las notas del estudiante"));
+    sum += calificaciones[i]; 
+}
+
+for(i = 0; i < calificaciones.length; i++){
+    console.log(`Calificacion ${i+1} : ${calificaciones[i]}`);
+}
+
+for (i = 0; i < calificaciones.length; i++){
+    if (calificaciones[i] > mayor){
+
+        mayor = calificaciones[i]; 
+    } 
+}
+
+console.log(`Suma de las notas ${sum}`);
+console.log(`promedio : ${sum / tamanio}`);
+console.log(`la Nota mas alta es : ${mayor}`);
