@@ -409,7 +409,7 @@ compra = parseInt(prompt("Para saber el monto a pagar ingrese el valor de su com
 if(compra <= 100000){
     descuento = `${compra} "No hay descuento" `;
 }else if (compra >= 100001 && compra <= 300000){
-    descuento = ( `${compra-(compra*0.05)} ,su descuento fue 5%`);pars
+    descuento = ( `${compra-(compra*0.05)} ,su descuento fue 5%`);
 }else if (compra > 300000 && compra <= 40000){
     descuento = (`${compra-(compra*0.10)} ,su descuento fue 10%`);
 }else if (compra >400000){
@@ -895,7 +895,7 @@ console.log(`EL CUADRADO ES: ${exponente(12, 6)}`);
 */
 
 
-// convertir temperatura  en funciones
+// convertir temperatura  con funciones
 
 /*
 let temp;
@@ -1039,7 +1039,7 @@ do{
 */
 
 
-//Arreglos_________________
+//Arreglos----------------
 /*
 let estudiantes = ["laura", "Julian", "Andres", "Oscar", "Paola"];
 
@@ -1237,7 +1237,7 @@ console.log(calificaciones[i]);
 }
 */
 // segundo arreglo
-
+/*
 let tamanio =parseInt(prompt("ingrese la cantidad de estudiantes"));
 let calificaciones = new Array(tamanio);
 let sum = 0;
@@ -1263,3 +1263,8 @@ for (i = 0; i < calificaciones.length; i++){
 console.log(`Suma de las notas ${sum}`);
 console.log(`promedio : ${sum / tamanio}`);
 console.log(`la Nota mas alta es : ${mayor}`);
+
+*/
+
+// Clase 26092024 Ing. Fabian
+
