@@ -15,15 +15,14 @@ function caja(){
     let total_fact = 0;
 
     //solicitar el nombre del producto su precio
-
-    for (i = o; i < productos.length; i++){
+    for(let i = 0; i < productos.length; i++){
         // pedir producto
-        let nombre_p = prompt(" ingres el nombre de producto: ");
+        let nombre_p = prompt(" ingrese el nombre de producto: ");
         let precio_p =parseInt(prompt("Ingrese el precio del producto: "));
 
         productos[i] = nombre_p;
         precios[i] = precio_p;
-        cont ++;
+        cantidad++;
 
         // Sumando los precios de los productos
         total_fact += precio_p;
@@ -39,3 +38,4 @@ function caja(){
     console.log(`Total a pagar: ${total_fact}`)
 
 }
+caja();
