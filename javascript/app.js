@@ -1266,5 +1266,83 @@ console.log(`la Nota mas alta es : ${mayor}`);
 
 */
 
-// Clase 26092024 Ing. Fabian
+// Objetos Clave - Valor 30092024
+/*
+let carro1 = {
+    marca : "Ford",
+    modelo : "Fiesta",
+    color : "Rojo",
+    anio : "2018",
+    placa : "ABC123",
+ 
+}
 
+let carro2 = {
+    marca: "Renault",
+    modelo: "Logan",
+    color : "Rojo",
+    anio : "2019",
+    placa : "XYZ321",
+    acelarar(){
+      return ("el carro 2 esta acelerando")  
+    }
+}
+
+console.log("Datos Carro 1" , carro1);
+console.log("Datos Carro 2" , carro2);
+
+console.log(`LA MARCA DEL VEHICULO 1 ES: ${carro1.marca}`);
+console.log(`LA MARCA DEL VEHICULO 2 ES: ${carro1.placa}`);
+
+carro1.marca = "Toyota";
+carro1.color = "Gris";
+
+console.log("LOS DATOS DE VEHICULO 1 SON: ", carro1);
+
+console.log(carro2.acelarar());
+
+*/
+
+class persona{
+
+    constructor(nombre, edad){
+
+        this._nombre = nombre;
+        this._edad = edad;
+    }
+
+    get nombre(){
+        return this._nombre;
+    }
+
+    set nombre(nombre){
+        this._nombre = this.nombre;
+    }
+    
+    get edad(){
+        return this._edad;
+    }
+
+    set edad(edad){
+        this._edad = this.edad;
+
+    }
+    saludar(){
+        console.log(`Hola soy ${this._nombre} y tengo ${this._edad} años`)
+    }
+}
+
+const per1 = new persona("Juan", 25);
+
+per1.saludar();
+
+const per2 = new persona("Andres", 28);
+
+
+per1._nombre = "lorena";
+
+per2._edad = 45;
+
+per1.saludar();
+
+per2.saludar();
