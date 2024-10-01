@@ -1303,8 +1303,9 @@ console.log(carro2.acelarar());
 
 */
 
-class persona{
-
+/*
+class Persona{
+                                        //Variables - camelCase  // Clases - Pasacal Case
     constructor(nombre, edad){
 
         this._nombre = nombre;
@@ -1316,7 +1317,7 @@ class persona{
     }
 
     set nombre(nombre){
-        this._nombre = this.nombre;
+        this._nombre = nombre;
     }
     
     get edad(){
@@ -1324,7 +1325,7 @@ class persona{
     }
 
     set edad(edad){
-        this._edad = this.edad;
+        this._edad = edad;
 
     }
     saludar(){
@@ -1332,17 +1333,142 @@ class persona{
     }
 }
 
-const per1 = new persona("Juan", 25);
+const per1 = new Persona("Juan", 25);
 
 per1.saludar();
 
-const per2 = new persona("Andres", 28);
+const per2 = new Persona("Andres", 28);
 
 
-per1._nombre = "lorena";
+per1.nombre = "lorena";
 
-per2._edad = 45;
+per2.edad = 45;
 
 per1.saludar();
 
 per2.saludar();
+*/
+
+/*
+// Clase 01102024
+class Libro{
+    constructor(titulo, autor, paginas){
+        this._titulo = titulo;
+        this._autor = autor;
+        this._paginas = paginas; 
+    }
+
+    get titulo(){
+        return this._titulo
+    }
+    set titulo(titulo){
+        this._titulo = titulo
+    }
+    get autor(){
+        return this._autor
+    }
+    set autor(autor){
+        this._autor = autor
+    }
+    get paginas(){
+        return this._paginas
+    }
+    set paginas(paginas){
+        this._paginas = paginas
+    }
+
+    mostrarInfo(){
+        
+    console.log(`El Titulo del libro es: ${this._titulo}, El Autor es: ${this._autor} y tiene: ${this._paginas} paginas`)
+    }
+}
+
+const l1 = new Libro("El relato de un naufrago", "Pepito", "230");
+const l2 = new Libro("El Principito", "Jean", "180");
+const l3 = new Libro("El Programador", "Lucia", "430");
+const l4 = new Libro("La Vuelta al Mundo en 80 dias", "Jorge", "350");
+
+console.log(l1.titulo);
+console.log(l2.titulo);
+console.log(l3.titulo);
+console.log(l4.titulo)
+
+l1.autor = "Gariel Garcia Marquez";
+l2.autor = "Antoine de Saint-Exupéry";
+l3.autor = "Ana";
+l4.autor = "Julio Verne";
+
+l1.mostrarInfo()
+l2.mostrarInfo()
+l3.mostrarInfo()
+l4.mostrarInfo()
+
+*/
+
+class Producto{
+
+    constructor(nombre, precio, cantidad){
+        this._nombre = nombre
+        this._precio = precio
+        this._cantidad = cantidad
+    }
+
+    get nombre(){
+        return this._nombre;
+    }
+
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
+
+    get precio(){
+        return this._precio;
+    }
+
+    set precio(precio){
+        this._precio = precio;
+    }
+
+    get cantidad(){
+        return this._cantidad;
+    }
+
+    set cantidad(cantidad){
+        this._cantidad = cantidad;
+    }
+
+    mostrarNombreProduto(){
+        console.log(`El nombre del Producto es: ${this._nombre} el precio es: ${this._precio} y la cantidad es: ${this._cantidad}`);
+    }
+
+
+    valorTotal(){
+        return this._precio * this._cantidad;
+    }
+
+
+    modificarCantidad(nuevoCantidad){
+        this._cantidad = nuevoCantidad;
+
+        console.log(`La Nueva cantidad es: ${this._cantidad}`);
+    }
+    
+    
+}
+const prod1 = new Producto("Mouse", 45000, 5);
+const prod2 = new Producto("Monitor", 14500000, 3);
+
+prod1.mostrarNombreProduto();
+prod2.mostrarNombreProduto();
+
+console.log(`El valor del producto es: ${prod1.valorTotal()}`);
+console.log(`El valor del producto es: ${prod2.valorTotal()}`);
+
+prod1.modificarCantidad(8);
+prod2.modificarCantidad(6);
+
+prod1.mostrarNombreProduto();
+prod2.mostrarNombreProduto();
+
+console.log(`El valor del producto es: ${prod1.valorTotal()}`);
+console.log(`El valor del producto es: ${prod2.valorTotal()}`);
