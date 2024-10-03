@@ -1405,15 +1405,18 @@ l4.mostrarInfo()
 
 */
 
-class Producto{
 
-    constructor(nombre, precio, cantidad){
+// Clase 02102024
+/*
+class Producto{ //SE INICIA CON LA CLASS
+
+    constructor(nombre, precio, cantidad){ // CONTRUCTOR CON LOS ATRIBUTOS
         this._nombre = nombre
         this._precio = precio
         this._cantidad = cantidad
     }
 
-    get nombre(){
+    get nombre(){ // SE OBTIENE 
         return this._nombre;
     }
 
@@ -1437,38 +1440,291 @@ class Producto{
         this._cantidad = cantidad;
     }
 
-    mostrarNombreProduto(){
+    mostrarNombreProduto(){ //METODOS
         console.log(`El nombre del Producto es: ${this._nombre} el precio es: ${this._precio} y la cantidad es: ${this._cantidad}`);
     }
 
 
-    valorTotal(){
+    valorTotal(){ // GENERA EL VALOR TOTAL DEL PRODUCTO
         return this._precio * this._cantidad;
     }
 
 
-    modificarCantidad(nuevoCantidad){
+    modificarCantidad(nuevoCantidad){ // SE MODIFICA LA CANTIDAD DEL PRODUCTO
         this._cantidad = nuevoCantidad;
 
         console.log(`La Nueva cantidad es: ${this._cantidad}`);
     }
+
+    anadirStock(nuevoCantidad){
+
+        return this._cantidad += nuevoCantidad;
+    }
+    venderStock(nuevoCantidad){
+        return this._cantidad -= nuevoCantidad;
+    }
+    operacion(){
+        let nCantidad;
+        nCantidad = parseFloat(prompt('Ingrese la nueva cantidad'));
+                
+         let op = parseInt(prompt("Ingrese que tipo de operacion desea realizar 1. Añadir 2. Restar"));
+
+         if(op===1){
+            console.log(prod3.anadirStock(nCantidad));
     
+        }else{
+            console.log(prod3.venderStock(nCantidad));
+        }
+    }
+    static crearProducto(){
+        let productos; 
+        let precios; 
+        let cantidades; 
+        
+        do{     
+        productos = prompt('Ingrese el nombre del producto');
+        }while(!productos);
+
+        do{
+        precios = parseFloat(prompt('Ingrese el precio del producto'));
+        }while(isNaN(precios || precios <= 0));
+
+        do{
+        cantidades = parseFloat(prompt('Ingrese la cantidad del producto'));
+        }while(isNaN(cantidades || cantidades <= 0));
+
+        return new Producto(productos, precios, cantidades); 
     
+    }
+
 }
-const prod1 = new Producto("Mouse", 45000, 5);
-const prod2 = new Producto("Monitor", 14500000, 3);
+
+const prod1 = new Producto("Mouse", 45000, 5); //CREACION DE OBJETO 1
+const prod2 = new Producto("Monitor", 14500000, 3); //CREACION DE OBJETO 2
+
+const prod3 = Producto.crearProducto()
 
 prod1.mostrarNombreProduto();
 prod2.mostrarNombreProduto();
+prod3.mostrarNombreProduto();
 
 console.log(`El valor del producto es: ${prod1.valorTotal()}`);
 console.log(`El valor del producto es: ${prod2.valorTotal()}`);
+console.log(`El valor del producto es: ${prod3.valorTotal()}`);
+
+prod3.operacion();
 
 prod1.modificarCantidad(8);
 prod2.modificarCantidad(6);
+//prod3.modificarCantidad(nCantidad);
 
 prod1.mostrarNombreProduto();
 prod2.mostrarNombreProduto();
+prod3.mostrarNombreProduto();
 
 console.log(`El valor del producto es: ${prod1.valorTotal()}`);
 console.log(`El valor del producto es: ${prod2.valorTotal()}`);
+console.log(`El valor del producto es: ${prod3.valorTotal()}`);
+
+*/
+
+/*
+class Termostato{
+
+    constructor(temperatura, estado){
+        this._temperatura = temperatura;
+        this._estado = estado;
+    }
+
+    get temperatura(){ // SE OBTIENE 
+        return this._temperatura;
+    }
+
+    set temperatura(temperatura){
+        this._temperatura = temperatura;
+    }
+    get estado(){ // SE OBTIENE 
+        return this._estado;
+    }
+
+    set estado(estado){
+        this._estado = estado;
+    }
+
+       subirTemperatura(){
+        this._temperatura = this._temperatura += Math.floor(Math.random() * (90) + 10 );
+            if(this._temperatura > 0){
+            this._estado = "encendido";
+       }
+       return this._temperatura
+    }
+       bajarTemperatura(){
+       this._temperatura = this._temperatura - Math.floor(Math.random() * (90) + 10 );
+        if(this._temperatura <= 0){
+            this._estado = "apagado";
+       }
+       return this._temperatura
+    }
+
+    encencderTermostato(){
+        if(this._estado == "apagado"){
+            this._estado = "encendido";
+
+        }
+        else{
+            this._estado = this._estado
+        }
+        return this._estado
+
+    }
+   apagarTermostato(){
+        if(this._estado == "encendido"){
+            this._estado = "apagado";
+        }
+        else{
+            this._estado = this._estado
+        }
+        return this._estado
+    }
+    mostrarActual(){
+        console.log(`la Temperatura actual es: ${this._temperatura} y el estado del termostato es : ${this._estado}`);
+    }
+
+   }
+
+
+const temp1 = new Termostato(0, "apagado");
+
+temp1.mostrarActual();
+
+temp1.subirTemperatura();
+temp1.mostrarActual();
+
+temp1.apagarTermostato();
+temp1.mostrarActual();
+
+temp1.bajarTemperatura();
+temp1.mostrarActual();
+
+temp1.encencderTermostato();
+temp1.mostrarActual();
+*/
+
+class Termostato{
+
+    constructor(temperatura, estado){
+        this._temperatura = temperatura;
+        this._estado = estado;
+    }
+
+    get temperatura(){ // SE OBTIENE 
+        return this._temperatura;
+    }
+
+    set temperatura(temperatura){
+        this._temperatura = temperatura;
+    }
+    get estado(){ // SE OBTIENE 
+        return this._estado;
+    }
+
+    set estado(estado){
+        this._estado = estado;
+    }
+
+       subirTemperatura(){
+        this._temperatura = this._temperatura += Math.floor(Math.random() * (90) + 10 );
+            if(this._temperatura > 0){
+            this._estado = "encendido";
+       }
+       return this._temperatura
+        }
+
+       bajarTemperatura(){
+       this._temperatura = this._temperatura - Math.floor(Math.random() * (90) + 10 );
+        if(this._temperatura <= 0){
+            this._estado = "apagado";
+       }
+       return this._temperatura
+        }
+
+        encencderTermostato(){
+        if(this._estado == "apagado"){
+            this._estado = "encendido";
+
+        }else{
+            this._estado = this._estado
+        }
+        return this._estado
+        }
+
+        apagarTermostato(){
+        if(this._estado == "encendido"){
+            this._estado = "apagado";
+
+        }else{
+            this._estado = this._estado
+        }
+        return this._estado
+        }
+        mostrarActual(){
+        alert(`la Temperatura actual es: ${this._temperatura}° y el termostado esta : ${this._estado}`);
+        }
+        cambioParamtros(){
+            let c = 1
+            while(c==1){
+                let comando = parseInt(prompt("Que parametro quiere modificar del termostato: \n 1. Temperatura \n 2. Estado (Encendido / apagado) \n 3. Salir"));
+        
+                switch(comando){
+                case 1:
+                    let opcion1 = parseInt(prompt("Quieres \n 1. Subir Temperatura \n 2. Bajar Temperatura"));
+                    if(opcion1 ==1){
+                        temp1.subirTemperatura()
+                    }else{
+                        temp1.bajarTemperatura()
+                    }
+                    break;
+                
+        
+                case 2:
+                    let opcion2 =  parseInt(prompt("Quieres \n 1. Encender  \n 2. Apagar")); 
+                    if(opcion2 == 1){
+                        temp1.encencderTermostato()
+                    }else{
+                        temp1.apagarTermostato()
+                    }
+                    break;
+        
+                case 3:
+                    alert ("Parametros confirmados");
+                    c = 0;
+        
+                default:
+                    c = 0
+        
+        
+            }
+        }
+     }
+
+   }
+
+a = parseInt(prompt("Ingrese Temperatura inicial"));
+b = (prompt("Ingrese Estado (encendido / apagado) del termostato"));
+
+const temp1 = new Termostato(a, b);
+
+temp1.mostrarActual();
+
+temp1.cambioParamtros();
+
+
+temp1.mostrarActual();
+
+
+
+
+
+
+
+
