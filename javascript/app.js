@@ -1641,7 +1641,7 @@ class Termostato{
         }
 
        bajarTemperatura(){
-       this._temperatura = this._temperatura - Math.floor(Math.random() * (90) + 10 );
+       this._temperatura = this._temperatura - Math.floor(Math.random() * (50) + 10 );
         if(this._temperatura <= 0){
             this._estado = "apagado";
        }
@@ -1673,7 +1673,7 @@ class Termostato{
         cambioParamtros(){
             let c = 1
             while(c==1){
-                let comando = parseInt(prompt("Que parametro quiere modificar del termostato: \n 1. Temperatura \n 2. Estado (Encendido / apagado) \n 3. Salir"));
+                let comando = parseInt(prompt("Que parametro quiere modificar del termostato: \n 1. Temperatura \n 2. Estado (Encendido / apagado) \n 3. Mostrar Parametros \n 4. Salir"));
         
                 switch(comando){
                 case 1:
@@ -1697,10 +1697,11 @@ class Termostato{
         
                 case 3:
                     alert ("Parametros confirmados");
-                    c = 0;
+                    temp1.mostrarActual();
+                    break;
         
                 default:
-                    c = 0
+                    c = 0;
         
         
             }
@@ -1718,8 +1719,6 @@ temp1.mostrarActual();
 
 temp1.cambioParamtros();
 
-
-temp1.mostrarActual();
 
 
 
